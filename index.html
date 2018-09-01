@@ -2,127 +2,227 @@
 <html style="height:100%">
 <head>
     <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/JavaScript.js"></script>
     <link rel="stylesheet" type="text/css" href="style/StyleSheet.css">
+    <link rel="stylesheet" href="lib/blockrain.js/src/blockrain.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Resume</title>
 </head>
-<body style="height:100%; color: black">
-    <div id="page-wrapper" style="height:100%">
-        <div id="header">
+<body style="height:100%; background-color:black; color:white;">
+
+    <script src="lib/blockrain.js/assets/js/jquery-1.11.1.min.js"></script>
+    <script src="lib/blockrain.js/src/blockrain.jquery.libs.js"></script>
+    <script src="lib/blockrain.js/src/blockrain.jquery.src.js"></script>
+    <script src="lib/blockrain.js/src/blockrain.jquery.themes.js"></script>
+    
+    <div id="page-wrapper" style="height:100%;">
+        <div id="header" style="display:flex">
             <div class="inner name">
                 Kamal Aslam
             </div>
-        </div>
-        <div style="background-image:url(img/Tetrus.jpg); background-size:contain; position: relative;top: 100px;height: 340px;width:-webkit-fill-available;">
-            <div class="profile">
-                <img class="circular" src="img/display_pic.jpg" height="20%" width="15%" />
-                <h1>Software Developer</h1>
+            <div class="dropdown" style="align-self:flex-end">
+                <span class="dropbtn">☰</span>
+                <div class="dropdown-content">
+                    <a href="#about">About</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#projects">Projects</a>
+                </div>
             </div>
         </div>
-
-        <section class="background section">
-            <div class="section__title">
-                Background
-            </div>
-            <div>
+        <div class="game" style="width:100%; height:353px; position:relative; top: 91px;"></div>
+        <script>var $versus2 = $('.game').blockrain({ autoplay: true, blockWidth: 50, scoreText: 'Score' });</script>
+        <div class="profile" style="z-index:100;">
+            <img class="circular" src="img/display_pic.jpg" height="20%" width="15%" />
+            <h1>Software Developer</h1>
+        </div>
+        <!--<div style="background-image:url(img/Tetrus.jpg); background-size:contain; position: relative;top: 100px;height: 340px;width:-webkit-fill-available;">
+    </div>-->
+        <div style="position:relative; top:-122px">
+            <section id="about" class="background section">
+                <div class="section__title">
+                    Background
+                </div>
+                <div class="section__content">
                     I recently graduated from UofT in May 2018 after completing
                     a internship at AMD as a Full Stack Developer.
                     Currently looking for a full time placement as a software developer.
-            </div>
-        </section>
+                </div>
+            </section>
 
-        <section class="experience section">
-            <div class="section__title">
-                Experience
-            </div>
-            <div>
-                <div id="AMD">
-                    <div>
-                        <div style="font-size:17px">Full Stack Developer Inter at AMD</div>
-                        <div id="amd-duration">2016-2017</div>
+            <section class="experience section">
+                <div class="section__title">
+                    Experience
+                </div>
+                <div>
+                    <div id="AMD" class="section__content">
+                        <div>
+                            <div style="font-size:17px">Full Stack Developer Inter at AMD</div>
+                            <div id="amd-duration">2016-2017</div>
+                        </div>
+                        <ul>
+                            <li>
+                                Developed and implemented complex Internet and Intranet applications on multiple
+                                platforms.
+                            </li>
+                            <li>
+                                Provided continued maintenance and development of bug fixes and patch sets for existing
+                                web applications.
+                            </li>
+                            <li>
+                                Implemented company policies, technical procedures and standards for preserving the
+                                integrity and security of data, reports and access.
+                            </li>
+                            <li>Consistently met deadlines and requirements for all production work orders.</li>
+                            <li>Recommended architectural improvements, design solutions and integration solutions.</li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li>
-                            Developed and implemented complex Internet and Intranet applications on multiple
-                            platforms.
-                        </li>
-                        <li>
-                            Provided continued maintenance and development of bug fixes and patch sets for existing
-                            web applications.
-                        </li>
-                        <li>
-                            Implemented company policies, technical procedures and standards for preserving the
-                            integrity and security of data, reports and access.
-                        </li>
-                        <li>Consistently met deadlines and requirements for all production work orders.</li>
-                        <li>Recommended architectural improvements, design solutions and integration solutions.</li>
-                    </ul>
-                </div>
 
-                <div id="ta">
-                    <div>
-                        <div style="font-size:17px">Teaching Assistant for CSC258</div>
-                        <div id="amd-duration">2016</div>
+                    <div id="ta">
+                        <div>
+                            <div style="font-size:17px">Teaching Assistant for CSC258</div>
+                            <div id="amd-duration">2016</div>
+                        </div>
+                        <ul>
+                            <li>
+                                Taught an average of 25 students per class
+                            </li>
+                            <li>
+                                Graded tests and papers and recorded grades for teaching staff
+                            </li>
+                            <li>
+                                Helped students understand core concepts of system designs and how to use computer
+                                simulation software
+                            </li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li>
-                            Taught an average of 25 students per class
-                        </li>
-                        <li>
-                            Graded tests and papers and recorded grades for teaching staff
-                        </li>
-                        <li>
-                            Helped students understand core concepts of system designs and how to use computer
-                            simulation software
-                        </li>
-                    </ul>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="skills section">
-            <div class="section__title">
-                Skills
-            </div>
-            <div style="display:flex">
-                <div class="skills_category">
-                    <div>Languages</div>
-                    <ul class="skills_list">
-                        <li>JavaScript(ES6)</li>
-                        <li>Typescript</li>
-                        <li>HTML5</li>
-                        <li>CSS/Sass</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C#</li>
-                        <li>C++</li>
-                        <li>SQL</li>
-                    </ul>
+            <section class="skills section">
+                <div class="section__title">
+                    Skills
                 </div>
-                <div class="skills_category">
-                    <div>Frameworks</div>
-                    <ul class="skills_list">
-                        <li>Angular 2/4</li>
-                        <li>React</li>
-                        <li>Node</li>
-                    </ul>
+                <div style="display:flex" class="section__content">
+                    <div class="skills_category">
+                        <div>Languages</div>
+                        <ul class="skills_list">
+                            <li>JavaScript(ES6)</li>
+                            <li>Typescript</li>
+                            <li>HTML5</li>
+                            <li>CSS/Sass</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C#</li>
+                            <li>C++</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skills_category">
+                        <div>Frameworks</div>
+                        <ul class="skills_list">
+                            <li>Angular 2/4</li>
+                            <li>React</li>
+                            <li>Node</li>
+                        </ul>
+                    </div>
+                    <div class="skills_category">
+                        <div>Tools</div>
+                        <ul class="skills_list">
+                            <li>Bash</li>
+                            <li>Git</li>
+                            <li>Postman</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="skills_category">
-                    <div>Tools</div>
-                    <ul class="skills_list">
-                        <li>Bash</li>
-                        <li>Git</li>
-                        <li>Postman</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="projects section">
-            <div class="section__title">
-                Projects
+            <a id="resume" href="aslamkam.github.io/kamalaslam/Resume.pdf" target="_blank" 
+               style="position:relative;top: 215px;left: 612px;text-decoration:none;font-size:larger; color: white;
+font-weight:700;">View My Resume <i class="fas fa-arrow-right" style="color:#007bff"></i></a>
+
+            <section id="projects" class="projects section">
+                <div class="section__title">
+                    Projects
+                </div>
+                <div class="section__content">
+                    <div id="SoftwareEng">
+                        <div>
+                            <div style="font-size:17px">MockFile System</div>
+                        </div>
+                        <ul>
+                            <li>
+                                In a team of four, developed a file system using JavaScript
+                            </li>
+                            <li>
+                                Made the layout of the classes using Object Oriented Design Principles
+                            </li>
+                            <li>
+                                Implemented a terminal to navigate the file system
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div>
+                            <div style="font-size:17px">Game Development</div>
+                        </div>
+                        <ul>
+                            <li>
+                                Created battle game with C
+                            </li>
+                            <li>
+                                Two basic attacks: slash and bash
+                            </li>
+                            <li>
+                                Connected to online server to play
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div>
+                            <div style="font-size:17px">Kernal Programming</div>
+                        </div>
+                        <ul>
+                            <li>
+                                Co-developed a kernal module
+                            </li>
+                            <li>
+                                Hijacked system calls to record which modules called them
+                            </li>
+                            <li>
+                                Created a custom system call that took in an input as to which process to monitor
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__copyright">
             </div>
-        </section>
+            <div class="footer__links">
+                <a href="mailto:Kamal.Aslam@outlook.com" target="_blank" title="email">
+                    <span class="text">email</span>
+                    <img src="/img/social/email.svg" alt="email">
+                </a>
+                <a href="https://github.com/aslamkam" target="_blank" title="github">
+                    <span class="text">github</span>
+                    <img src="/img/social/github.svg" alt="github">
+                </a>
+                <a href="https://www.linkedin.com/in/kamal-aslam-14a7a376/" target="_blank" title="linkedin">
+                    <span class="text">linkedin</span>
+                    <img src="/img/social/linkedin.svg" alt="linkedin">
+                </a>
+            </div>
+        </footer>
+
+        <a href="#" class="back-to-top" hidden>
+            <span class="dot">
+                <i class="fa fa-angle-double-up" style="font-size:24px;color:black;"></i>
+            </span>
+        </a>
 
     </div>
 </body>
