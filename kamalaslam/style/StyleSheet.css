@@ -1,7 +1,18 @@
-﻿#header {
+﻿html {
+    height: 100%;
+}
+
+body {
+    height:100%;
+    background-color: black;
+    color: white;
+}
+
+#header {
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -12,6 +23,12 @@
     font-size: 15px;
     z-index: 1000;
 }
+
+#page-wrapper {
+    height: 100%;
+}
+
+/*Title Design*/
 .inner {
     max-width: 1024px;
     margin: 0 auto;
@@ -42,7 +59,12 @@
     width: 500px;
     top: -226px;
     text-align: center;
+    z-index: 100;
 }
+
+/*Title Design - end*/
+
+/*Section Design*/
 
 .section__title {
     flex-shrink: 0;
@@ -97,11 +119,9 @@
 .skills_category{
     margin-left:50px;
 }
+/*Section Design - end*/
 
-body{
-    background-color:black;
-    color: white;
-}
+
 
 @media screen and (max-width: 630px) {
     .footer__links {
@@ -193,6 +213,7 @@ body{
     padding-top:26px;
 }
 
+/*need to replace with classier design*/
 .dot {
     position: fixed;
     left: 96%;
@@ -203,6 +224,46 @@ body{
     border-radius: 50%;
     text-align: center;
     display: inline-block;
+}
+
+/*Blockrain mods*/
+.game {
+    width: 100%;
+    height: 353px;
+    position: relative;
+    top: 91px;
+}
+
+#net {
+    position: relative;
+    top: -122px;
+}
+
+#resume {
+    position: relative;
+    top: 215px;
+    left: 612px;
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    font-weight: 700;
+}
+
+.pageUpArrow {
+    font-size: 24px;
+    color: black;
+}
+
+.exp_title_job {
+    font-size: 17px
+}
+
+.project_title {
+    font-size: 17px;
+}
+
+.skills_content {
+    display: flex;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------*/
@@ -223,6 +284,7 @@ body{
 .dropdown {
     position: relative;
     display: inline-block;
+    align-self: flex-end;
 }
 
 /* Dropdown Content (Hidden by Default) */

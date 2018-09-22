@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html style="height:100%">
+<html>
 <head>
     <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -10,18 +10,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Resume</title>
 </head>
-<body style="height:100%; background-color:black; color:white;">
+<body>
 
 
     <script src="lib/blockrain/blockrain.jquery.js"></script>
     <script src="lib/blockrain/blockrain.js"></script>
 
-    <div id="page-wrapper" style="height:100%;">
-        <div id="header" style="display:flex">
+    <div id="page-wrapper">
+        <div id="header">
             <div class="inner name">
                 Kamal Aslam
             </div>
-            <div class="dropdown" style="align-self:flex-end">
+            <div class="dropdown">
                 <span class="dropbtn">☰</span>
                 <div class="dropdown-content">
                     <a href="#about">About</a>
@@ -30,15 +30,15 @@
                 </div>
             </div>
         </div>
-        <div class="game" style="width:100%; height:353px; position:relative; top: 91px;"></div>
+        <div class="game"></div>
         <script>var $versus2 = $('.game').blockrain({ autoplay: true, blockWidth: 50, scoreText: 'Score' });</script>
-        <div class="profile" style="z-index:100;">
+        <div class="profile">
             <img class="circular" src="img/display_pic.jpg" height="20%" width="15%" />
             <h1>Software Developer</h1>
         </div>
         <!--<div style="background-image:url(img/Tetrus.jpg); background-size:contain; position: relative;top: 100px;height: 340px;width:-webkit-fill-available;">
         </div>-->
-        <div style="position:relative; top:-122px">
+        <div id ="net">
             <section id="about" class="background section">
                 <div class="section__title">
                     Background
@@ -57,7 +57,7 @@
                 <div>
                     <div id="AMD" class="section__content">
                         <div>
-                            <div style="font-size:17px">Full Stack Developer Inter at AMD</div>
+                            <div class="exp_title_job">Full Stack Developer Inter at AMD</div>
                             <div id="amd-duration">2016-2017</div>
                         </div>
                         <ul>
@@ -80,7 +80,7 @@
 
                     <div id="ta">
                         <div>
-                            <div style="font-size:17px">Teaching Assistant for CSC258</div>
+                            <div class="exp_title_job">Teaching Assistant for CSC258</div>
                             <div id="amd-duration">2016</div>
                         </div>
                         <ul>
@@ -137,9 +137,7 @@
                 </div>
             </section>
 
-            <a id="resume" href="Resume.pdf" target="_blank"
-               style="position:relative;top: 215px;left: 612px;text-decoration:none;font-size:larger; color: white;
-font-weight:700;">View My Resume<i class="fas fa-arrow-right" style="color:#007bff"></i></a>
+            <a id="resume" href="Resume.pdf" target="_blank">View My Resume<i class="fas fa-arrow-right" style="color:#007bff"></i></a>
 
             <section id="projects" class="projects section">
                 <div class="section__title">
@@ -148,7 +146,7 @@ font-weight:700;">View My Resume<i class="fas fa-arrow-right" style="color:#007b
                 <div class="section__content">
                     <div id="SoftwareEng">
                         <div>
-                            <div style="font-size:17px">MockFile System</div>
+                            <div class="project_title">MockFile System</div>
                         </div>
                         <ul>
                             <li>
@@ -164,7 +162,7 @@ font-weight:700;">View My Resume<i class="fas fa-arrow-right" style="color:#007b
                     </div>
                     <div>
                         <div>
-                            <div style="font-size:17px">Game Development</div>
+                            <div class="project_title">Game Development</div>
                         </div>
                         <ul>
                             <li>
@@ -181,7 +179,7 @@ font-weight:700;">View My Resume<i class="fas fa-arrow-right" style="color:#007b
 
                     <div>
                         <div>
-                            <div style="font-size:17px">Kernal Programming</div>
+                            <div class="project_title">Kernal Programming</div>
                         </div>
                         <ul>
                             <li>
@@ -220,7 +218,7 @@ font-weight:700;">View My Resume<i class="fas fa-arrow-right" style="color:#007b
 
         <a href="#" class="back-to-top" hidden>
             <span class="dot">
-                <i class="fa fa-angle-double-up" style="font-size:24px;color:black;"></i>
+                <i class="fa fa-angle-double-up"></i>
             </span>
         </a>
 
