@@ -1,227 +1,137 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/JavaScript.js"></script>
-    <link rel="stylesheet" type="text/css" href="style/StyleSheet.css">
-    <link rel="stylesheet" href="lib/blockrain/blockrain.css" />
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <title>Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kam Aslam - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .section li {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
+<header>
+    <h1>Kam Aslam</h1>
+    <p>Resume</p>
+</header>
 
-    <script src="lib/blockrain/blockrain.jquery.js"></script>
-    <script src="lib/blockrain/blockrain.js"></script>
+<div class="container">
 
-    <div id="page-wrapper">
-        <div id="header">
-            <div class="inner name">
-                Kamal Aslam
-            </div>
-            <div class="dropdown">
-                <span class="dropbtn">☰</span>
-                <div class="dropdown-content">
-                    <a href="#about">About</a>
-                    <a href="#resume">Resume</a>
-                    <a href="#projects">Projects</a>
-                </div>
-            </div>
-        </div>
-        <div class="game"></div>
-        <script>var $versus2 = $('.game').blockrain({ autoplay: true, blockWidth: 50, scoreText: 'Score' });</script>
-        <div class="profile">
-            <img class="circular" src="img/display_pic.jpg" height="20%" width="15%" />
-            <h1>Software Developer</h1>
-        </div>
-        <!--<div style="background-image:url(img/Tetrus.jpg); background-size:contain; position: relative;top: 100px;height: 340px;width:-webkit-fill-available;">
-        </div>-->
-        <div id ="net">
-            <section id="about" class="background section">
-                <div class="section__title">
-                    Background
-                </div>
-                <div class="section__content">
-                    I recently graduated from UofT in May 2018 after completing
-                    a internship at AMD as a Full Stack Developer.
-                    Currently looking for a full time placement as a software developer.
-                </div>
-            </section>
-
-            <section class="experience section">
-                <div class="section__title">
-                    Experience
-                </div>
-                <div>
-                    <div id="AMD" class="section__content">
-                        <div>
-                            <div class="exp_title_job">Full Stack Developer Inter at AMD</div>
-                            <div id="amd-duration">2016-2017</div>
-                        </div>
-                        <ul>
-                            <li>
-                                Developed and implemented complex Internet and Intranet applications on multiple
-                                platforms.
-                            </li>
-                            <li>
-                                Provided continued maintenance and development of bug fixes and patch sets for existing
-                                web applications.
-                            </li>
-                            <li>
-                                Implemented company policies, technical procedures and standards for preserving the
-                                integrity and security of data, reports and access.
-                            </li>
-                            <li>Consistently met deadlines and requirements for all production work orders.</li>
-                            <li>Recommended architectural improvements, design solutions and integration solutions.</li>
-                        </ul>
-                    </div>
-
-                    <div id="ta">
-                        <div>
-                            <div class="exp_title_job">Teaching Assistant for CSC258</div>
-                            <div id="amd-duration">2016</div>
-                        </div>
-                        <ul>
-                            <li>
-                                Taught an average of 25 students per class
-                            </li>
-                            <li>
-                                Graded tests and papers and recorded grades for teaching staff
-                            </li>
-                            <li>
-                                Helped students understand core concepts of system designs and how to use computer
-                                simulation software
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="skills section">
-                <div class="section__title">
-                    Skills
-                </div>
-                <div style="display:flex" class="section__content">
-                    <div class="skills_category">
-                        <div>Languages</div>
-                        <ul class="skills_list">
-                            <li>JavaScript(ES6)</li>
-                            <li>Typescript</li>
-                            <li>HTML5</li>
-                            <li>CSS/Sass</li>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>C#</li>
-                            <li>C++</li>
-                            <li>SQL</li>
-                        </ul>
-                    </div>
-                    <div class="skills_category">
-                        <div>Frameworks</div>
-                        <ul class="skills_list">
-                            <li>Angular 2/4</li>
-                            <li>React</li>
-                            <li>Node</li>
-                        </ul>
-                    </div>
-                    <div class="skills_category">
-                        <div>Tools</div>
-                        <ul class="skills_list">
-                            <li>Bash</li>
-                            <li>Git</li>
-                            <li>Postman</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <a id="resume" href="Resume.pdf" target="_blank">View My Resume<i class="fas fa-arrow-right" style="color:#007bff"></i></a>
-
-            <section id="projects" class="projects section">
-                <div class="section__title">
-                    Projects
-                </div>
-                <div class="section__content">
-                    <div id="SoftwareEng">
-                        <div>
-                            <div class="project_title">MockFile System</div>
-                        </div>
-                        <ul>
-                            <li>
-                                In a team of four, developed a file system using JavaScript
-                            </li>
-                            <li>
-                                Made the layout of the classes using Object Oriented Design Principles
-                            </li>
-                            <li>
-                                Implemented a terminal to navigate the file system
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div>
-                            <div class="project_title">Game Development</div>
-                        </div>
-                        <ul>
-                            <li>
-                                Created battle game with C
-                            </li>
-                            <li>
-                                Two basic attacks: slash and bash
-                            </li>
-                            <li>
-                                Connected to online server to play
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <div>
-                            <div class="project_title">Kernal Programming</div>
-                        </div>
-                        <ul>
-                            <li>
-                                Co-developed a kernal module
-                            </li>
-                            <li>
-                                Hijacked system calls to record which modules called them
-                            </li>
-                            <li>
-                                Created a custom system call that took in an input as to which process to monitor
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <footer class="footer">
-            <div class="footer__copyright">
-            </div>
-            <div class="footer__links">
-                <a href="mailto:Kamal.Aslam@outlook.com" target="_blank" title="email">
-                    <span class="text">email</span>
-                    <img src="/img/social/email.svg" alt="email">
-                </a>
-                <a href="https://github.com/aslamkam" target="_blank" title="github">
-                    <span class="text">github</span>
-                    <img src="/img/social/github.svg" alt="github">
-                </a>
-                <a href="https://www.linkedin.com/in/kamal-aslam-14a7a376/" target="_blank" title="linkedin">
-                    <span class="text">linkedin</span>
-                    <img src="/img/social/linkedin.svg" alt="linkedin">
-                </a>
-            </div>
-        </footer>
-
-        <a href="#" class="back-to-top" hidden>
-            <span class="dot">
-                <i class="fa fa-angle-double-up"></i>
-            </span>
-        </a>
-
+    <div class="section">
+        <h2>Contact Information</h2>
+        <p>Email: kamaslam@example.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kamalaslam/">linkedin.com/in/kamalaslam</a></p>
+        <p>GitHub: <a href="https://github.com/aslamkam">github.com/aslamkam</a></p>
     </div>
+
+    <div class="section">
+        <h2>Summary</h2>
+        <p>Experienced professional with a background in software development and project management. Skilled in various programming languages and tools, with a strong focus on delivering high-quality solutions.</p>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Software Developer</strong> at XYZ Corp (2020 - Present)
+                <ul>
+                    <li>Developed and maintained web applications using JavaScript, HTML, and CSS.</li>
+                    <li>Collaborated with cross-functional teams to define project requirements and specifications.</li>
+                    <li>Implemented best practices for code quality and performance optimization.</li>
+                </ul>
+            </li>
+            <li><strong>Project Manager</strong> at ABC Inc (2017 - 2020)
+                <ul>
+                    <li>Led a team of developers in delivering projects on time and within budget.</li>
+                    <li>Managed project timelines, resources, and stakeholder communication.</li>
+                    <li>Coordinated with clients to ensure satisfaction and project success.</li>
+                </ul>
+            </li>
+            <!-- Add more positions as needed -->
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Master of Science in Computer Science</strong>, University of Somewhere (2015 - 2017)</li>
+            <li><strong>Bachelor of Science in Information Technology</strong>, College of Anywhere (2011 - 2015)</li>
+            <!-- Add more education details as needed -->
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: JavaScript, Python, Java</li>
+            <li>Web Technologies: HTML, CSS, React, Node.js</li>
+            <li>Tools: Git, Docker, Jenkins</li>
+            <li>Project Management: Agile, Scrum, JIRA</li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Certified Scrum Master (CSM)</li>
+            <li>Amazon Web Services (AWS) Certified Solutions Architect</li>
+            <!-- Add more certifications as needed -->
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Kam Aslam</p>
+</footer>
+
 </body>
 </html>
