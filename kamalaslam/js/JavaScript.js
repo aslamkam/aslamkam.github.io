@@ -1,37 +1,28 @@
-﻿jQuery(document).ready(function () {
-
-    // The function actually applying the offset
-    function offsetAnchor() {
-        if (location.hash.length !== 0) {
-            window.scrollTo(window.scrollX, window.scrollY - 120);
-        }
-    }
-
-    // Captures click events of all <a> elements with href starting with #
-    $(document).on('click', 'a[href^="#"]', function (event) {
-        // Click events are captured before hashchanges. Timeout
-        // causes offsetAnchor to be called after the page jump.
-        window.setTimeout(function () {
-            offsetAnchor();
-        }, 0);
+﻿document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
     });
 
-    // Set the offset when entering page with hash present in the url
-    window.setTimeout(offsetAnchor, 0);
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+            }
+        });
+    }, { threshold: 0.1 });
 
-    var offset = 200;
-    var duration = 500;
-    jQuery(window).scroll(function () {
-        if (jQuery(this).scrollTop() > offset) {
-            $('.back-to-top').fadeIn(duration);
-        } else {
-            $('.back-to-top').fadeOut(duration);
-        }
+    document.querySelectorAll('.section').forEach((section) => {
+        observer.observe(section);
     });
-
-    jQuery('.back-to-top').click(function (event) {
-        event.preventDefault();
-        jQuery('html, body').animate({ scrollTop: 0 }, duration);
-        return false;
-    })
 });
